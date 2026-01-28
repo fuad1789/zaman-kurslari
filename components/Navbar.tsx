@@ -66,7 +66,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-slate-100 bg-white overflow-hidden"
+            className="md:hidden absolute top-full left-0 w-full border-b border-t border-slate-100 bg-white shadow-xl z-50 overflow-hidden"
           >
             <div className="px-4 py-6 space-y-4 flex flex-col">
               {links.map((link) => (

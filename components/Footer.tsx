@@ -3,9 +3,9 @@ import { Facebook, Instagram, Linkedin, Twitter, MapPin, Phone, Mail, ArrowRight
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400 py-16 border-t border-slate-900 font-sans">
+    <footer className="bg-slate-950 text-slate-400 py-12 lg:py-16 border-t border-slate-900 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-8">
           
           {/* Column 1: Brand & Logo */}
           <div className="space-y-6">

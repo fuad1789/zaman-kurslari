@@ -55,7 +55,7 @@ const cards = [
 
 export default function Programs() {
   return (
-    <section id="programs" className="py-16 lg:py-24 bg-white">
+    <section id="programs" className="py-12 lg:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
@@ -77,7 +77,7 @@ export default function Programs() {
         </div>
 
         {/* 2x2 Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
           {cards.map((card, idx) => (
             <motion.div
               key={idx}
@@ -86,14 +86,14 @@ export default function Programs() {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
               className={cn(
-                "group relative p-8 rounded-3xl border border-slate-100 transition-all duration-300 hover:shadow-lg overflow-hidden flex flex-col justify-between min-h-[220px]",
+                "group relative p-6 md:p-8 rounded-3xl border border-slate-100 transition-all duration-300 hover:shadow-lg overflow-hidden flex flex-col justify-between min-h-[220px]",
                 card.dark ? "bg-slate-900 border-slate-800" : "bg-gradient-to-br",
                 card.className
               )}
             >
               {/* Background Icon (Decorative) */}
               <card.icon className={cn(
-                "absolute -bottom-6 -right-6 w-40 h-40 rotate-[-10deg] transition-transform duration-500 group-hover:rotate-0 group-hover:scale-110 opacity-20",
+                "absolute -bottom-6 -right-6 w-32 h-32 md:w-40 md:h-40 rotate-[-10deg] transition-transform duration-500 group-hover:rotate-0 group-hover:scale-110 opacity-20",
                 card.dark ? "text-white" : card.iconColor 
               )} />
               
@@ -108,7 +108,7 @@ export default function Programs() {
                     </div>
                     
                     <div className={cn(
-                        "p-2 rounded-full transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0",
+                        "p-2 rounded-full transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 hidden md:block",
                         card.dark ? "bg-white/10 text-white" : "bg-white text-slate-900 shadow-sm"
                     )}>
                         <PiArrowUpRightBold size={20} />
@@ -129,7 +129,7 @@ export default function Programs() {
                   <div className="flex flex-wrap gap-2">
                     {card.tags?.map(tag => (
                       <span key={tag} className={cn(
-                        "text-[11px] font-semibold px-3 py-1.5 rounded-lg border transition-colors cursor-default",
+                        "text-[10px] md:text-[11px] font-semibold px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg border transition-colors cursor-default",
                         card.tagClass
                       )}>
                          {tag}

@@ -30,7 +30,7 @@ export default function LocationAdvantage() {
   return (
     <section className="py-20 bg-white border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {features.map((feature, idx) => (
             <div key={idx} className="flex flex-col items-center text-center">
               <div className={`p-4 rounded-2xl ${feature.bg} ${feature.color} mb-6`}>
