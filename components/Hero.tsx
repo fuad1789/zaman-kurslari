@@ -77,7 +77,7 @@ export default function Hero() {
               <div className="col-span-1 h-full relative group">
                  <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl shadow-primary-100">
                      <Image 
-                       src="/İMG/student image.jfif" 
+                       src="/İMG/student image.jpg" 
                        alt="Tələbələr" 
                        fill
                        className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -101,7 +101,7 @@ export default function Hero() {
                 {/* Image 2: Study Materials */}
                 <div className="flex-1 rounded-2xl overflow-hidden relative group shadow-lg">
                    <Image 
-                     src="/İMG/study materials.jfif" 
+                     src="/İMG/study materials.jpg" 
                      alt="Tədris materialları" 
                      fill
                      className="object-cover transition-transform duration-700 group-hover:scale-105"
